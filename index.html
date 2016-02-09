@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <head>
     <style>
-        .responsive {
-            width: 100%;
-            height: auto;}
+
+        .h_iframe        {position:relative;}
+        .h_iframe .ratio {display:block;width:100%;height:auto;}
+        .h_iframe iframe {position:absolute;top:0;left:0;width:100%; height:100%;}
+
 
         .content-wrap {width: 560px; margin: 0 auto;}
 
@@ -25,49 +27,26 @@
 
 <body>
 <div class="content-wrap">
-
-    <h1>Fixed</h1>
-
-        <iframe
-
-            width="420" 
-            height="315" 
-
-            src="https://www.youtube.com/embed/m-9m67mHNHU?rel=0&amp;showinfo=0" 
-            frameborder="0" 
-            allowfullscreen>
-        </iframe>
-
-        <iframe 
-
-            width="500" 
-            height="281"
-
-            src="https://player.vimeo.com/video/68749840" 
-            frameborder="0" 
-            webkitallowfullscreen mozallowfullscreen allowfullscreen>
-        </iframe>
-
-
-
-    <h1>Responsive</h1>
-
+        
+        
+        <div class="h_iframe">
+        <img class="ratio" src="http://placehold.it/16x9"/>
         <iframe
             
-            class="responsive"
-
             src="https://www.youtube.com/embed/m-9m67mHNHU?rel=0&amp;showinfo=0" 
             frameborder="0" 
             allowfullscreen>
         </iframe>
+        </div>
 
+        <div class="h_iframe">
+        <img class="ratio" src="http://placehold.it/16x9"/>
         <iframe 
-
-            class="responsive"
 
             src="https://player.vimeo.com/video/68749840" 
             frameborder="0" 
             webkitallowfullscreen mozallowfullscreen allowfullscreen>
         </iframe>
+        </div>
 
 </div></body>
